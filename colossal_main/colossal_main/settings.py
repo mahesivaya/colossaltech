@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'adminapp',
+    'rest_framework',
+    'apiapp',
 ]
 
 MIDDLEWARE = [
@@ -85,11 +86,11 @@ WSGI_APPLICATION = 'colossal_main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'colossaltech',
+        'NAME': 'colossaltechdatabase',
         'USER': 'postgres',
         'PASSWORD': 'Jaimatadi@3',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
