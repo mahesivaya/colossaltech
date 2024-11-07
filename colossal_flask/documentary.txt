@@ -1,0 +1,26 @@
+Docker commands to simplify executions after making changes
+
+1. Stop and remove the current running container
+2. rm the image
+3. Restart the image with same name
+4. build the image
+5. rm the running container on the same image name
+5. run the container again with same names. 
+
+
+
+To see all docker images
+    - docker images
+To see all containers
+    - docker ps
+    - docker ps -a To show all the containers
+To stop the container running
+    docker ps -a | awk '{print $1, $2}' | grep colossalapi | awk '{print $1}' | xargs -I {} docker stop {}
+To remove containers with specific name
+    - docker ps -a | awk '{print $1, $2}' | grep colossalapi | awk '{print $1}' | xargs -I {} docker rm {}
+
+* TO Stop and rm the specific image container
+    docker ps -a | awk '{print $1, $2}' | grep colossalapi | awk '{print $1}' | xargs -I {} docker stop {} | xargs I {} docker rm {}
+
+To build the new image
+    docker build -t imagename:latest .
