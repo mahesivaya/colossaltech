@@ -1,0 +1,13 @@
+name: docker_postgres
+
+services:
+  app:
+    image: postgres
+    container_name: docker_postgres_container
+    ports:
+      - "5432:5432"
+
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
