@@ -95,10 +95,10 @@ WSGI_APPLICATION = 'colossalProj.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "HOST": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
+        "NAME": "colossaltech",
+        "HOST": "postgres_db",
+        "USER": "mahesh",
+        "PASSWORD": "password",
         "PORT": 5432,
         },
     }
