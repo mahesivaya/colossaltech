@@ -73,12 +73,12 @@ WSGI_APPLICATION = 'colossalProj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # DATABASES = {
 #     "default": {
@@ -92,16 +92,16 @@ WSGI_APPLICATION = 'colossalProj.wsgi.application'
 #     }
 
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "colossaltech",
-        "HOST": "postgres_db",
-        "USER": "mahesh",
-        "PASSWORD": "password",
-        "PORT": 5432,
-        },
-    }
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "colossaltech",
+#         "HOST": "postgres_db",
+#         "USER": "mahesh",
+#         "PASSWORD": "password",
+#         "PORT": 5432,
+#         },
+#     }
 
 
 
