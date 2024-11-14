@@ -1,5 +1,4 @@
-name: colossaltech_docker
-
+version: "3"
 services:
   web:
     build: .
